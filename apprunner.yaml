@@ -8,7 +8,6 @@ build:
       - pnpm install --frozen-lockfile
       - pnpm run build
 run:
-  runtime-version: 18.10
   command: pnpm run start
   network: 
     port: 5678
