@@ -5,8 +5,9 @@ build:
   commands:
     pre-build:
       - npm install -g pnpm
+			- npm prefix -g
     build: 
-      - pnpm run build
+      - find / -name pnpm.cjs #pnpm run build
 run:
   command: pnpm run start
   network: 
