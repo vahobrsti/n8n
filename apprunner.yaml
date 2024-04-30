@@ -4,8 +4,8 @@ runtime: nodejs18
 
 run:
   pre-run:
-    command: 
-		  - ./init.sh
+    command:
+      - ./init.sh
   command: pnpm start
   network:
     port: 5678
