@@ -1,3 +1,4 @@
+#- pnpm install --frozen-lockfile
 version: 1.0
 runtime: nodejs18
 build:
@@ -5,7 +6,6 @@ build:
     pre-build:
       - npm install -g pnpm
     build: 
-      #- pnpm install --frozen-lockfile
 			- find / -name pnpm.cjs 
 	    - npm prefix -g
       - pnpm run build
