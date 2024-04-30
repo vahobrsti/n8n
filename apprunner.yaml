@@ -4,9 +4,8 @@ runtime: nodejs18
 
 run:
   pre-run:
-    command:
-      - echo hi
-      - ./init.sh
+    - echo hi
+    - ./init.sh
 
   command: pnpm start
   network:
