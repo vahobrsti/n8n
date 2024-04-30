@@ -39,7 +39,8 @@
     "test:e2e:all": "scripts/run-e2e.js all"
   },
   "dependencies": {
-    "n8n": "workspace:*"
+    "n8n": "workspace:*",
+    "pnpm":">=9.0.2"
   },
   "devDependencies": {
     "@n8n_io/eslint-config": "workspace:*",
