@@ -1,6 +1,9 @@
-#- pnpm install --frozen-lockfile
 version: 1.0
 runtime: nodejs18
+build:
+  commands:
+    build:
+      - ./init.sh
 run:
   command: pnpm start
   network:
