@@ -8,4 +8,3 @@ source /root/.bashrc
 echo $PATH
 which pnpm 
 pnpm install --frozen-lockfile
-pnpm run start
