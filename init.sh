@@ -1,4 +1,5 @@
 #!/bin/sh
+set -xe
 npm install -g pnpm
 npm prefix -g
 echo $PATH
