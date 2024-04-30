@@ -4,12 +4,17 @@ runtime: nodejs18
 build:
   commands:
     pre-build:
-      - npm install -g pnpm 
+      - npm install -g pnpm
       - npm prefix -g
-    build: 
+      - echo $PATH
+      - curl -fsSL https://get.pnpm.io/install.sh | sh -
+      - source /root/.bashrc
+      - echo $PATH
+      - which pnpm 
+    build:
       - pnpm run build
 run:
   command: pnpm run start
-  network: 
+  network:
     port: 5678
     env: PORT
