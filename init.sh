@@ -1,4 +1,4 @@
-!#/bin/sh
+#!/bin/sh
 npm install -g pnpm
 npm prefix -g
 echo $PATH
