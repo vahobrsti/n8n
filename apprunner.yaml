@@ -1,12 +1,7 @@
 #- pnpm install --frozen-lockfile
 version: 1.0
 runtime: nodejs18
-
 run:
-  #pre-run:
-  #  - echo hi
-  #  - ./init.sh
-
   command: pnpm start
   network:
     port: 5678
