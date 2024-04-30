@@ -3,7 +3,7 @@ runtime: nodejs18
 build:
   commands:
     pre-build:
-      - chmod + init.sh
+      - chmod +x init.sh
       - ./init.sh
 run:
   command: pnpm start
