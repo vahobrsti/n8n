@@ -4,11 +4,10 @@ runtime: nodejs18
 build:
   commands:
     pre-build:
-      - "npm install -g pnpm" 
-			- "npm prefix -g"
-	    - "find / -name pnpm.cjs"
+      - npm install --save pnpm" 
+			- npm install
     build: 
-      -  pnpm run build
+      - pnpm run build
 run:
   command: pnpm run start
   network: 
