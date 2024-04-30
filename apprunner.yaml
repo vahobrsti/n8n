@@ -4,13 +4,8 @@ runtime: nodejs18
 build:
   commands:
     pre-build:
-      - npm install -g pnpm
-      - npm prefix -g
-      - echo $PATH
-      - curl -fsSL https://get.pnpm.io/install.sh | sh -
-      - source /root/.bashrc
-      - echo $PATH
-      - which pnpm 
+      - chmod +x init.sh
+      - ./init.sh
     build:
       - pnpm run build
 run:
