@@ -4,7 +4,7 @@ runtime: nodejs18
 build:
   commands:
     pre-build:
-      - npm install --save pnpm" 
+      - npm install --save pnpm 
       - npm install
     build: 
       - pnpm run build
