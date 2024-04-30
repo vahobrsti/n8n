@@ -5,7 +5,7 @@ build:
     pre-build:
       - npm install -g pnpm
     build: 
-      - pnpm install --frozen-lockfile
+      #- pnpm install --frozen-lockfile
       - pnpm run build
 run:
   command: pnpm run start
