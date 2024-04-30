@@ -7,7 +7,7 @@ run:
   #  - echo hi
   #  - ./init.sh
 
-  command: ./init.sh #pnpm start
+  command: pnpm start
   network:
     port: 5678
     env: PORT
